@@ -1,0 +1,39 @@
+<%- include("partials/header"); -%>
+<style>
+.login-form{
+	background-image: url(/images/img-1.png);
+	background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+</style>
+
+
+	<div class="login-form">
+		<h1>Login Form</h1>
+		<form action="" method="POST">
+			<input type="text" name="username" placeholder="Username" >
+			<input type="password" name="password" placeholder="Password" >
+			<input type="submit" value="Log In" onclick="click()">
+			<script>
+				function click(){
+					swal ("You are logged in");
+				}
+			</script>
+			<br>
+			<div class="signup">
+				<a href="/signup">Sign Up</a>
+				<br>
+				<br>
+				<a href="http://localhost:3000/resetpassword">Forget Password</a>
+			</div>
+			
+			
+		</form>
+	</div>
+
+
+		
+		
+		
